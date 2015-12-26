@@ -12,14 +12,12 @@
 ##############################################################################
 export ARCH=arm
 export CROSS_COMPILE=~/android/nitrogen/prebuilts/gcc/linux-x86/arm/arm-eabi-4.9/bin/arm-eabi-
-export CCACHE_DIR=~/.ccache/kernel_e975
-export KBUILD_BUILD_USER=xyyx
-export KBUILD_BUILD_HOST=irk
+export CCACHE_DIR=~/.ccache/kernel_e970
 ##############################################################################
 # make zImage
 ##############################################################################
 mkdir -p ./obj/KERNEL_OBJ/
-make O=./obj/KERNEL_OBJ/ gee_defconfig
+make O=./obj/KERNEL_OBJ/ geeb_defconfig
 
 make -j 10 O=./obj/KERNEL_OBJ/
 
