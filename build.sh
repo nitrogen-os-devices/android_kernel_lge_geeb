@@ -11,8 +11,11 @@
 # set toolchain
 ##############################################################################
 export ARCH=arm
-export CROSS_COMPILE=~/android/nitrogen/prebuilts/gcc/linux-x86/arm/arm-eabi-4.9/bin/arm-eabi-
 export CCACHE_DIR=~/.ccache/kernel_e970
+export CROSS_COMPILE=~/android/nougat/prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.9/bin/arm-linux-androideabi-
+export KBUILD_BUILD_USER=xyyx
+export KBUILD_BUILD_HOST=irk
+
 ##############################################################################
 # make zImage
 ##############################################################################
