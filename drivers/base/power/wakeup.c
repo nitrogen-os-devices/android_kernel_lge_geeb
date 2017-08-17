@@ -18,7 +18,7 @@
 #include <trace/events/power.h>
 #include <linux/moduleparam.h>
 
-static bool enable_msm_hsic_ws = false;
+static bool enable_msm_hsic_ws = true;
 module_param(enable_msm_hsic_ws, bool, 0644);
 static bool enable_wlan_rx_wake_ws = true;
 module_param(enable_wlan_rx_wake_ws, bool, 0644);
